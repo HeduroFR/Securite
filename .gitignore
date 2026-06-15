@@ -26,3 +26,7 @@ vite.config.ts.timestamp-*
 .superpowers/
 .vscode/
 docs/
+# Editor / local
+.claude/
+.vscode/
+.idea/

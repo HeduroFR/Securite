@@ -41,6 +41,7 @@ body {
 .legal-card li { display: flex; flex-direction: column; gap: .15rem; }
 .legal-label { font-weight: 700; }
 .legal-phone { font-weight: 700; font-size: 1.1rem; width: fit-content; padding: .15rem .5rem; background: var(--orange); color: var(--black); text-decoration: none; }
+.legal-phone.dont { background: transparent; color: #fff; border: 2px solid #fff; text-decoration: line-through; }
 .legal-note { font-weight: 400; font-size: .85rem; opacity: .9; }
 
 .login { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; text-align: center; }

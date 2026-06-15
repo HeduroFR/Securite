@@ -33,18 +33,23 @@ export const legalCall: Contact[] = [
   }
 ];
 
-/** Numéros à NE PAS appeler / pièges. Pas de téléphone : ce sont des avertissements. */
+/** Numéros à NE PAS appeler / pièges — un peu de troll, mais le fond est sérieux. */
 export const legalDontCall: Contact[] = [
   {
-    label: 'Police / commissariat',
-    note: 'Tout est enregistré et utilisé contre toi. Ce n’est pas un conseil.'
+    label: 'Police « pour expliquer ta version »',
+    phone: '17',
+    note: 'Spoiler : ils ne prennent pas ta défense. Tout est enregistré et retenu contre toi.'
   },
   {
-    label: 'Numéro inconnu se présentant comme « ton avocat »',
-    note: 'Vérifie via la legal team. Ne confirme aucune info.'
+    label: '« Ton avocat » qui t’appelle d’un numéro inconnu',
+    note: 'Personne ne t’appelle comme ça. Vérifie via la legal team, ne confirme rien.'
   },
   {
-    label: 'Proches qui pourraient paniquer ou t’auto-incriminer',
-    note: 'Préviens un contact calme et briefé, pas n’importe qui.'
+    label: 'Le proche qui va paniquer et tout raconter',
+    note: 'Tata qui rappelle le commissariat « pour arranger les choses »… non. Un contact calme et briefé.'
+  },
+  {
+    label: 'Ton ex, à 3h, en garde à vue',
+    note: 'Tentant, mais non. Garde ton seul appel pour l’avocat·e.'
   }
 ];

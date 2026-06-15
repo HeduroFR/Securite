@@ -26,6 +26,7 @@
         {#each legalDontCall as c}
           <li>
             <span class="legal-label">{c.label}</span>
+            {#if c.phone}<span class="legal-phone dont">{c.phone}</span>{/if}
             {#if c.note}<span class="legal-note">{c.note}</span>{/if}
           </li>
         {/each}

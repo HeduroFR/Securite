@@ -56,7 +56,7 @@ export const categories: Category[] = [
       {
         name: "Cagoule (Balaclava)",
         example: "Balaclava en tissus fin",
-        spec: "Coque rigide, jugulaire, norme EN 1078 (vélo) au minimum",
+        spec: "Tissu fin respirant, couvre tête/visage",
         priceApprox: "~10€",
         note: "Elle permet de protéger votre anonymat des prises de vidéos...",
         buyLink: "https://www.bricodepot.fr/p/5059340046402",
@@ -77,8 +77,10 @@ export const categories: Category[] = [
         name: "Coquille de protection",
         example: "Coquille de boxe / sport de combat",
         spec: "Coque rigide sur ceinture ajustable, taille adaptée",
-        priceApprox: "~10-20€",
-        note: "Protège le bas-ventre des tirs et des coups.",
+        priceApprox: "~10€",
+        note: "Protège les parties intimes des tirs et des coups.",
+        buyLink:
+          "https://www.decathlon.fr/p/coquille-de-protection-slipee-homme-100-blanc/165811/c227m8388827",
       },
       {
         name: "Genouillères / protège-tibias",
@@ -93,7 +95,7 @@ export const categories: Category[] = [
         spec: "Armature renforcée, ouverture rapide, grande toile",
         note: "Bouclier improvisé contre projectiles et caméras ; aussi anti-pluie.",
         buyLink:
-          "https://www.decathlon.fr/p/redirect-from-checkout/_/R-p-14862?mc=8654664",
+          "https://www.decathlon.fr/p/parapluie-125-cm-anti-uv-upf50-profilter-noir/14862/c1m8654664",
       },
     ],
   },

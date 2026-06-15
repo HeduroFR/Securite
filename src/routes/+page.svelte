@@ -18,6 +18,6 @@
 </main>
 
 <footer class="foot">
-  <Disclaimer />
-  <p>Dernière mise à jour : 2026-06-15</p>
+  <p class="foot-title">SE PROTÉGER</p>
+  <p>Dernière mise à jour : <time datetime="2026-06-15">15 juin 2026</time></p>
 </footer>

@@ -4,7 +4,7 @@
   export let category: Category;
 </script>
 
-<details class="category" name="categorie">
+<details class="category" name="category">
   <summary>▸ {category.title}</summary>
   <div class="items">
     {#each category.items as item}

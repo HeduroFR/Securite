@@ -15,7 +15,7 @@ export interface Category {
 
 export const categories: Category[] = [
   {
-    id: 'yeux',
+    id: 'eyes',
     title: 'Yeux',
     items: [
       {
@@ -28,7 +28,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'respirer',
+    id: 'breathing',
     title: 'Respirer',
     items: [
       {
@@ -41,7 +41,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'tete',
+    id: 'head',
     title: 'Tête',
     items: [
       {
@@ -53,7 +53,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'peau',
+    id: 'skin',
     title: 'Peau / corps',
     items: [
       {
@@ -65,7 +65,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'mains',
+    id: 'hands',
     title: 'Mains',
     items: [
       {
@@ -77,7 +77,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'secours',
+    id: 'firstaid',
     title: 'Premiers soins',
     items: [
       {
@@ -90,7 +90,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'audition',
+    id: 'hearing',
     title: 'Audition',
     items: [
       {
@@ -115,7 +115,7 @@ export const categories: Category[] = [
     ]
   },
   {
-    id: 'hydratation',
+    id: 'hydration',
     title: 'Hydratation',
     items: [
       {

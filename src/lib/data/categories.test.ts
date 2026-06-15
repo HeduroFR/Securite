@@ -4,8 +4,8 @@ import { categories } from './categories';
 describe('categories data', () => {
   it('has the 9 expected categories in order', () => {
     expect(categories.map((c) => c.id)).toEqual([
-      'yeux', 'respirer', 'tete', 'peau', 'mains',
-      'secours', 'audition', 'legal', 'hydratation'
+      'eyes', 'breathing', 'head', 'skin', 'hands',
+      'firstaid', 'hearing', 'legal', 'hydration'
     ]);
   });
 

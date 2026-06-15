@@ -1,4 +1,8 @@
 name = "protection"
-compatibility_date = "2025-01-01"
+main = ".svelte-kit/cloudflare/_worker.js"
+compatibility_date = "2025-05-05"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".svelte-kit/cloudflare"
+
+[assets]
+directory = ".svelte-kit/cloudflare"
+binding = "ASSETS"

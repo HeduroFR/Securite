@@ -12,7 +12,8 @@
         {#each legalCall as c}
           <li>
             <span class="legal-label">{c.label}</span>
-            {#if c.phone}<a class="legal-phone" href={'tel:' + c.phone}>{c.phone}</a>{/if}
+            {#if c.phone}<a class="legal-phone" href={'tel:' + c.phone.replace(/\s/g, '')}>{c.phone}</a>{/if}
+            {#if c.url}<a class="legal-phone" href={c.url} target="_blank" rel="noopener">{c.url.replace(/^https?:\/\//, '')}</a>{/if}
             {#if c.note}<span class="legal-note">{c.note}</span>{/if}
           </li>
         {/each}

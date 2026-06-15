@@ -3,6 +3,10 @@
   export let form: ActionData;
 </script>
 
+<svelte:head>
+  <title>Connexion — Se Protéger</title>
+</svelte:head>
+
 <main class="login">
   <h1>SE PROTÉGER</h1>
   <p>Accès réservé. Entre le code.</p>

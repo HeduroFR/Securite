@@ -5,6 +5,11 @@
   export let data: PageData;
 </script>
 
+<svelte:head>
+  <title>Se Protéger — Protection en manifestation</title>
+  <meta name="description" content="Recommandations de matériel de protection individuelle en manifestation : yeux, voies respiratoires, tête, corps, mains, premiers soins." />
+</svelte:head>
+
 <header class="hero">
   <h1>SE PROTÉGER</h1>
   <p class="sub">Liste de matériel de protection en manifestation.</p>

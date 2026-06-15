@@ -32,6 +32,17 @@ body {
 .item dt { font-weight: 700; text-transform: uppercase; font-size: .7rem; opacity: .7; margin-top: .5rem; }
 .item dd { margin: 0; }
 .item .buy { display: inline-block; margin-top: .75rem; background: var(--orange); color: var(--black); padding: .4rem .8rem; text-decoration: none; }
+.legal-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; padding-bottom: 1rem; }
+.legal-card { padding: 1rem; border: 3px solid var(--black); }
+.legal-card h3 { margin: 0 0 .75rem; text-transform: uppercase; }
+.legal-card.call { background: var(--black); color: var(--orange); }
+.legal-card.dont-call { background: var(--red); color: #fff; }
+.legal-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.legal-card li { display: flex; flex-direction: column; gap: .15rem; }
+.legal-label { font-weight: 700; }
+.legal-phone { font-weight: 700; font-size: 1.1rem; width: fit-content; padding: .15rem .5rem; background: var(--orange); color: var(--black); text-decoration: none; }
+.legal-note { font-weight: 400; font-size: .85rem; opacity: .9; }
+
 .login { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; text-align: center; }
 .login input, .login button { font-size: 1rem; padding: .6rem; border: 3px solid var(--black); }
 .login button { background: var(--black); color: var(--orange); cursor: pointer; }
@@ -45,6 +56,7 @@ body {
   .hero { padding: 3rem 2rem; }
   .categories { padding: 2rem; }
   .items { grid-template-columns: repeat(2, 1fr); }
+  .legal-cards { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 1080px) {
   .items { grid-template-columns: repeat(3, 1fr); }

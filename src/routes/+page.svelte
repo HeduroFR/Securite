@@ -2,6 +2,7 @@
   import type { PageData } from './$types';
   import Disclaimer from '$lib/components/Disclaimer.svelte';
   import CategorySection from '$lib/components/CategorySection.svelte';
+  import LegalSection from '$lib/components/LegalSection.svelte';
   export let data: PageData;
 </script>
 
@@ -18,7 +19,11 @@
 
 <main class="categories">
   {#each data.categories as category}
-    <CategorySection {category} />
+    {#if category.id === 'legal'}
+      <LegalSection title={category.title} />
+    {:else}
+      <CategorySection {category} />
+    {/if}
   {/each}
 </main>
 

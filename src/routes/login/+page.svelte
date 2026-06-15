@@ -4,11 +4,11 @@
 </script>
 
 <svelte:head>
-  <title>Connexion — Se Protéger</title>
+  <title>F*CK RIPOST</title>
 </svelte:head>
 
 <main class="login">
-  <h1>SE PROTÉGER</h1>
+  <h1>F*CK RIPOST</h1>
   <p>Accès réservé. Entre le code.</p>
   <form method="POST">
     <input type="password" name="passcode" placeholder="Code d'accès" autocomplete="off" required />

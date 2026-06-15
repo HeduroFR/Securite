@@ -144,7 +144,7 @@ export const categories: Category[] = [
   },
   {
     id: "legal",
-    title: "Légal / comms",
+    title: "Avocats & défense",
     items: [
       {
         name: "Carte des droits + contact avocat",

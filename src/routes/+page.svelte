@@ -7,13 +7,13 @@
 </script>
 
 <svelte:head>
-  <title>Se Protéger — Protection en manifestation</title>
+  <title>F*CK RIPOST — Protection en manifestation</title>
   <meta name="description" content="Recommandations de matériel de protection individuelle en manifestation : yeux, voies respiratoires, tête, corps, mains, premiers soins." />
 </svelte:head>
 
 <header class="hero">
-  <h1>SE PROTÉGER</h1>
-  <p class="sub">Liste de matériel de protection en manifestation.</p>
+  <h1>F*CK RIPOST - Se Protéger</h1>
+  <p class="sub">Liste de matériel de protection en manifestation (non-exhaustive)</p>
   <Disclaimer />
 </header>
 
@@ -28,6 +28,6 @@
 </main>
 
 <footer class="foot">
-  <p class="foot-title">SE PROTÉGER</p>
+  <p class="foot-title">F*CK RIPOST</p>
   <p>Dernière mise à jour : <time datetime="2026-06-15">15 juin 2026</time></p>
 </footer>

@@ -59,7 +59,8 @@ export const categories: Category[] = [
         spec: "Tissu fin respirant, couvre tête/visage",
         priceApprox: "~10€",
         note: "Elle permet de protéger votre anonymat des prises de vidéos...",
-        buyLink: "https://www.bricodepot.fr/p/5059340046402",
+        buyLink:
+          "https://www.amazon.fr/leruiyezs-Respirante-Antiglisse-Protection-Rafra%C3%AEchissant/dp/B0FJ1XJZ9K",
       },
     ],
   },
@@ -125,6 +126,52 @@ export const categories: Category[] = [
         buyLink:
           "https://www.amazon.fr/Laboratoire-Gilbert-physiologique-Physiodose-unidoses/dp/B00IGBSTM6",
       },
+      {
+        name: "Solution anti-lacrymo (Maalox dilué)",
+        example: "Maalox + eau, mélange 50/50 en flacon souple",
+        spec: "Antiacide liquide dilué moitié eau, flacon refermable",
+        note: "Asperger sur la peau/visage après le gaz : neutralise mieux que l'eau seule. Pas dans les yeux directement.",
+      },
+      {
+        name: "Trousse de secours",
+        example: "Compresses, bandes, pansements + garrot tourniquet (CAT)",
+        spec: "Compresses stériles, bande cohésive, pansements, garrot type CAT",
+        priceApprox: "~20-40€",
+        note: "Pour blessures de tir (LBD) ou de charge : compression, hémorragie. Apprendre à poser un garrot avant.",
+      },
+      {
+        name: "Couverture de survie",
+        example: "Couverture isothermique pliable",
+        spec: "Mylar aluminisé, face dorée/argentée, ~210x160 cm",
+        priceApprox: "~2€",
+        note: "Contre le choc, le froid, l'attente. Tient dans une poche.",
+      },
+    ],
+  },
+  {
+    id: "gear",
+    title: "Énergie / lumière / comms",
+    items: [
+      {
+        name: "Lampe frontale",
+        example: "Lampe frontale LED rechargeable",
+        spec: "Mains libres, mode rouge (discrétion), autonomie longue, étanche",
+        priceApprox: "~15€",
+        note: "Indispensable de nuit (free party, dispersion) : se déplacer, soigner dans le noir.",
+      },
+      {
+        name: "Batterie externe",
+        example: "Powerbank ~10000 mAh + câble",
+        spec: "Capacité ≥10000 mAh, câble adapté au téléphone",
+        priceApprox: "~20€",
+        note: "Le téléphone = preuves vidéo, carte, contact legal team. Ne pas tomber à plat.",
+      },
+      {
+        name: "Argent liquide",
+        example: "Quelques billets + pièces",
+        spec: "Petites coupures, gardées sur soi séparément du portefeuille",
+        note: "Si le téléphone est éteint ou saisi : pas de trace de carte, transport, nourriture, dépannage.",
+      },
     ],
   },
   {
@@ -143,18 +190,6 @@ export const categories: Category[] = [
     ],
   },
   {
-    id: "legal",
-    title: "Avocats & défense",
-    items: [
-      {
-        name: "Carte des droits + contact avocat",
-        example: "Numéro de la legal team / avocat noté sur papier",
-        spec: "Contacts sur papier, téléphone avec code PIN fort, données chiffrées",
-        note: "En France, dissimuler son visage en manifestation peut être sanctionné.",
-      },
-    ],
-  },
-  {
     id: "hydration",
     title: "Hydratation",
     items: [
@@ -163,6 +198,25 @@ export const categories: Category[] = [
         example: "Bouteille d'eau / gourde",
         spec: "Eau claire pour boire et rincer, contenant souple refermable",
         note: "L'eau sert aussi à rincer les yeux après exposition au gaz.",
+      },
+      {
+        name: "Électrolytes / sucre",
+        example: "Pastilles d'électrolytes, barres, fruits secs",
+        spec: "Sels minéraux + sucres rapides, format poche",
+        priceApprox: "~5€",
+        note: "Effort, chaleur, heures debout : évite le malaise et le coup de fatigue.",
+      },
+    ],
+  },
+  {
+    id: "legal",
+    title: "Avocats & défense",
+    items: [
+      {
+        name: "Carte des droits + contact avocat",
+        example: "Numéro de la legal team / avocat noté sur papier",
+        spec: "Contacts sur papier, téléphone avec code PIN fort, données chiffrées",
+        note: "En France, dissimuler son visage en manifestation peut être sanctionné.",
       },
     ],
   },

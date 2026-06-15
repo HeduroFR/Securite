@@ -6,34 +6,34 @@ export interface Contact {
 }
 
 /**
- * Numéros utiles — avocat·es, défense collective, observateurs.
+ * Numéros utiles - avocat·es, défense collective, observateurs.
  * Les legal teams sont LOCALES (par ville / par manif), pas un numéro national.
- * Trouve celle de ta ville via le réseau RAJCOL, et note le numéro du jour AVANT.
+ * Note le numéro du jour AVANT, et garde ceux des avocat·es ci-dessous sur toi.
  */
 export const legalCall: Contact[] = [
   {
-    label: "Réseau RAJCOL — annuaire des défenses collectives locales",
-    url: "https://rajcollective.noblogs.org",
-    note: "Trouve la legal team de ta ville. À consulter AVANT la manif.",
+    label: "Maître Delphine Caro",
+    phone: "06 50 44 52 33",
+    note: "À contacter en cas de garde à vue. Ne rien dire sans avocat·e.",
   },
   {
-    label: "Défense Collective (exemple : Rennes)",
-    phone: "07 51 28 26 11",
-    note: "Exemple régional. Remplace par le numéro annoncé pour TA manif, noté sur le bras.",
+    label: "Maître Nicolas Prigent",
+    phone: "06 79 48 32 92",
+    note: "À contacter en cas de garde à vue. Ne rien dire sans avocat·e.",
   },
   {
-    label: "Avocat·e de permanence (barreau)",
-    phone: "",
-    note: "Désigne un·e avocat·e en garde à vue. Ne rien dire sans lui/elle.",
+    label: "Maître Olivier Pacheu",
+    phone: "06 73 07 12 83",
+    note: "À contacter en cas de garde à vue. Ne rien dire sans avocat·e.",
   },
   {
-    label: "LDH — Ligue des droits de l'Homme (national)",
+    label: "LDH - Ligue des droits de l'Homme",
     phone: "01 56 55 51 00",
     note: "Signaler violences / interpellations. Antenne locale souvent plus utile.",
   },
 ];
 
-/** Numéros à NE PAS appeler / pièges — un peu de troll, mais le fond est sérieux. */
+/** Numéros à NE PAS appeler / pièges - un peu de troll, mais le fond est sérieux. */
 export const legalDontCall: Contact[] = [
   {
     label: "Police « pour expliquer ta version »",
@@ -49,7 +49,7 @@ export const legalDontCall: Contact[] = [
     note: "Tata qui rappelle le commissariat « pour arranger les choses »… non. Un contact calme et briefé.",
   },
   {
-    label: "Ton ex, à 3h, en garde à vue",
-    note: "Tentant, mais non. Garde ton seul appel pour l’avocat·e.",
+    label: "Le pote qui « connaît un truc » et veut négocier",
+    note: "Pas d’arrangement à l’amiable avec la police. Tu parles à ton avocat·e, point.",
   },
 ];

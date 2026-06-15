@@ -1,4 +1,4 @@
-# F\*CK RIPOST — site recommandation protection manifestation
+# F\*CK RIPOST - site recommandation protection manifestation
 
 One-pager FR, accès par passcode (vérifié côté serveur). SvelteKit + Bun.
 
@@ -34,7 +34,7 @@ avec `EnvironmentFile=/chemin/.env`, `NODE_ENV=production`. Le cookie de session
 
 1. Pousser le repo sur GitHub.
 2. Cloudflare Pages → Create project → connect le repo.
-3. Build command : `bun run build` — Output directory : `.svelte-kit/cloudflare`.
+3. Build command : `bun run build` - Output directory : `.svelte-kit/cloudflare`.
 4. Variables d'environnement (chiffrées, côté Cloudflare) : `SITE_PASSCODE`,
    `SESSION_SECRET`. Ne JAMAIS committer `.env`.
 5. `wrangler.toml` active déjà `nodejs_compat` (requis par `node:crypto`).

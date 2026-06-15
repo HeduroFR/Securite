@@ -1,42 +1,27 @@
-# sv
+# Se Protéger — site recommandation protection manifestation
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+One-pager FR, accès par passcode (vérifié côté serveur). SvelteKit + Bun.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
+## Dev
+```bash
+bun install
+cp .env.example .env   # puis éditer SITE_PASSCODE et SESSION_SECRET
+bun run dev
 ```
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --no-install .
+## Build & run (prod)
+```bash
+bun run build
+PORT=3000 bun ./build/index.js
 ```
 
-## Developing
+Variables (`.env`) : `SITE_PASSCODE`, `SESSION_SECRET` (longue valeur aléatoire).
+Le port et le host sont configurables via `PORT` / `HOST` (svelte-adapter-bun).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Déploiement VPS homelab
+Derrière un reverse-proxy (TLS). Exemple systemd : lancer `bun ./build/index.js`
+avec `EnvironmentFile=/chemin/.env`, `NODE_ENV=production`. Le cookie de session est
+`secure` en production : servir en HTTPS.
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Contenu
+Éditer `src/lib/data/categories.ts` puis rebuild.

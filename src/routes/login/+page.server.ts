@@ -1,4 +1,5 @@
 import { fail, redirect } from '@sveltejs/kit';
+import { dev } from '$app/environment';
 import { env } from '$env/dynamic/private';
 import { signSession } from '$lib/server/session';
 import { createLimiter } from '$lib/server/ratelimit';
@@ -23,7 +24,7 @@ export const actions: Actions = {
       path: '/',
       httpOnly: true,
       sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production',
+      secure: !dev,
       maxAge: 7 * 24 * 60 * 60
     });
     throw redirect(303, '/');

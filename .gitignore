@@ -24,3 +24,5 @@ vite.config.ts.timestamp-*
 
 # Brainstorm companion
 .superpowers/
+.vscode/
+docs/

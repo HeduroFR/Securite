@@ -27,6 +27,16 @@ avec `EnvironmentFile=/chemin/.env`, `NODE_ENV=production`. Le cookie de session
 > Oublier cette variable en prod = cookie de session servi sans `Secure`. Toujours
 > définir `NODE_ENV=production` (et servir en HTTPS) sur le VPS.
 
+## Déploiement Cloudflare Pages (depuis GitHub)
+1. Pousser le repo sur GitHub.
+2. Cloudflare Pages → Create project → connect le repo.
+3. Build command : `bun run build` — Output directory : `.svelte-kit/cloudflare`.
+4. Variables d'environnement (chiffrées, côté Cloudflare) : `SITE_PASSCODE`,
+   `SESSION_SECRET`. Ne JAMAIS committer `.env`.
+5. `wrangler.toml` active déjà `nodejs_compat` (requis par `node:crypto`).
+
+L'IP de la maison n'est jamais exposée : le site tourne sur l'infra Cloudflare.
+
 ## Contenu
 Éditer `src/lib/data/categories.ts` puis rebuild. Pour un lien d'achat, remplir le
 champ `buyLink` de l'item (sinon pas de bouton « Lien d'achat »).

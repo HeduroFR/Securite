@@ -3,6 +3,7 @@
   import Disclaimer from '$lib/components/Disclaimer.svelte';
   import CategorySection from '$lib/components/CategorySection.svelte';
   import LegalSection from '$lib/components/LegalSection.svelte';
+  import SiteNav from '$lib/components/SiteNav.svelte';
   export let data: PageData;
 </script>
 
@@ -14,6 +15,7 @@
 <header class="hero">
   <h1>F*CK RIPOST - Se Protéger</h1>
   <p class="sub">Liste de matériel de protection en manifestation (non-exhaustive)</p>
+  <SiteNav />
   <Disclaimer />
 </header>
 
@@ -31,3 +33,4 @@
   <p class="foot-title">F*CK RIPOST</p>
   <p>Dernière mise à jour : <time datetime="2026-06-16">16 juin 2026</time></p>
 </footer>
+

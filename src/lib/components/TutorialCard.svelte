@@ -7,10 +7,10 @@
   const count = tutorial.slides.length;
 
   function prev() {
-    index = (index - 1 + count) % count;
+    if (index > 0) index -= 1;
   }
   function next() {
-    index = (index + 1) % count;
+    if (index < count - 1) index += 1;
   }
   function onKey(e: KeyboardEvent) {
     if (e.key === 'ArrowLeft') prev();
@@ -99,9 +99,9 @@
         loading="lazy"
       />
       <div class="controls">
-        <button type="button" on:click={prev} aria-label="Étape précédente">◂</button>
+        <button type="button" on:click={prev} disabled={index === 0} aria-label="Étape précédente">◂</button>
         <span class="counter">{index + 1}/{count}</span>
-        <button type="button" on:click={next} aria-label="Étape suivante">▸</button>
+        <button type="button" on:click={next} disabled={index === count - 1} aria-label="Étape suivante">▸</button>
       </div>
     </div>
   {:else}
@@ -205,6 +205,10 @@
     width: 2.4rem;
     height: 2.4rem;
     cursor: pointer;
+  }
+  .controls button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
   .counter {
     font-weight: 700;

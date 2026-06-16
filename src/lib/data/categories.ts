@@ -98,6 +98,11 @@ export const categories: Category[] = [
         buyLink:
           "https://www.decathlon.fr/p/parapluie-125-cm-anti-uv-upf50-profilter-noir/14862/c1m8654664",
       },
+			{
+        name: "Chaussures de sécurité",
+        example: "Chaussures avec une armature coquée",
+        spec: "Armature renforcée, couleur sobre, résistant aux pavés",
+      },
     ],
   },
   {
